@@ -1,0 +1,82 @@
+.country-page {
+  .body-content {
+    padding: 2rem 0;
+
+    .hero {
+      display: flex;
+
+      & > * {
+        flex: 1;
+      }
+
+      .card {
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgb(0, 17, 40, 0.8),
+            rgb(0, 17, 40, 0.8)
+          ),
+          url("../../public/img/covid-banner-2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        .cases {
+          font-size: 2rem;
+          color: var(--color-text-light-3);
+          line-height: 1;
+        }
+
+        .count {
+          font-size: 7rem;
+          color: var(--color-text-light-3);
+          line-height: 1;
+
+          @media (max-width: 360px) {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.extra-components {
+  color: var(--color-text-light-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 3.4rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.error-wrapper {
+  padding: 2rem 0;
+}

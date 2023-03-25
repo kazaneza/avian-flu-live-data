@@ -1,0 +1,19 @@
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .icon-wrapper {
+    .icon {
+      font-size: 1.8rem;
+      color: #585858;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-3px);
+        color: var(--color-text-dark-2);
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.section-hero {
+  position: relative;
+  min-height: 22rem;
+  background-image: url("../../public/img/covid-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero-container {
+    z-index: 5;
+    position: relative;
+    padding: 2rem 0 4rem 0;
+
+    .main-text {
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--color-text-light-2);
+      line-height: 1;
+      margin-bottom: 1rem;
+
+      @media (max-width: 620px) {
+        font-size: 3rem;
+      }
+    }
+
+    .filter-container {
+      background-color: #f0f4fa;
+      padding: 2rem;
+      padding-bottom: 3rem;
+      border-radius: 0.5rem;
+      display: flex;
+      gap: 3rem;
+
+      & > * {
+        flex: 1;
+
+        &:not(:last-child) {
+          border-right: solid 2px var(--color-grey-2);
+        }
+      }
+
+      @media (max-width: 920px) {
+        flex-direction: column;
+
+        & > * {
+          &:not(:last-child) {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

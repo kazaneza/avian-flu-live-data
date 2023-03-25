@@ -1,0 +1,81 @@
+.country {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem 1rem rgba(0, 0, 0, 0.02);
+
+  .header {
+    display: flex;
+    margin: 1rem 0;
+    gap: 1rem;
+
+    .flag {
+      flex: 1;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .details {
+      flex: 2;
+    }
+
+    .title {
+      .country-name {
+        color: var(--color-text-dark-1);
+      }
+    }
+
+    @media (max-width: 100px) {
+      .title {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .title {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .stats {
+    background-color: rgba(0, 17, 40, 0.119);
+    border-radius: 3px;
+    padding: 1rem;
+
+    .stats-list {
+      padding: 1rem 0;
+      list-style: none;
+      font-size: 1.6rem;
+      columns: 2;
+
+      li {
+        span {
+          font-weight: 600;
+          color: var(--color-text-dark-1);
+        }
+
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+
+  .updated-time {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    // color: var(--color-text-dark-1);
+    font-weight: 600;
+    gap: 1rem;
+
+    .icon {
+      font-size: 2.4rem;
+      color: var(--color-text-dark-1);
+      font-weight: bold;
+    }
+
+    .time {
+      font-weight: 600;
+      color: var(--color-text-dark-1);
+    }
+  }
+}

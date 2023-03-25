@@ -1,0 +1,15 @@
+.search-wrapper {
+  .search-box {
+    input {
+      width: 90%;
+      padding: 0.6rem 1rem;
+      border: #eee solid 1px;
+      border-radius: 3px;
+      font-family: inherit;
+
+      @media (max-width: 920px) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.home-page {
+  background-color: #f1f3f5;
+
+  .display-wrapper {
+    padding: 4rem 0;
+  }
+
+  .countries-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    gap: 4rem;
+
+    @media (max-width: 950px) {
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      gap: 2rem;
+    }
+
+    @media (max-width: 455px) {
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      gap: 2rem;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+
+  .paginate-btn {
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border: solid 2px var(--color-text-dark-3);
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: var(--color-text-dark-3);
+  }
+
+  .paginate-btn-active {
+    color: #fff;
+    background-color: var(--color-text-dark-3);
+  }
+}

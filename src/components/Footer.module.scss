@@ -1,0 +1,39 @@
+.footer {
+  background-color: #f1f3f5;
+
+  .footer-container {
+    padding: 2rem 0 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .built-by {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      line-height: 1;
+
+      .heart-icon {
+        color: red;
+      }
+
+      a {
+        color: var(--color-text-dark-1);
+
+        &:link,
+        &:visited {
+          text-decoration: none;
+          padding-bottom: 1.5px;
+          border-bottom: 1px solid currentColor;
+          transition: all 0.2s;
+        }
+
+        &:hover,
+        &:active {
+          color: var(--color-text-dark-1);
+        }
+      }
+    }
+  }
+}

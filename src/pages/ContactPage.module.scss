@@ -1,0 +1,131 @@
+.contact-page {
+  background-color: #f1f3f5;
+  padding-bottom: 4rem;
+
+  .contact-header {
+    color: var(--color-text-light-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+    }
+
+    @media (max-width: 390px) {
+      h1 {
+        font-size: 2.4rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .body-content {
+    padding: 4rem;
+
+    @media (max-width: 450px) {
+      padding: 2rem;
+    }
+
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    margin-top: -6rem;
+
+    .author-wrapper {
+      padding: 2rem;
+
+      @media (max-width: 450px) {
+        padding: 1rem;
+      }
+
+      display: flex;
+      gap: 2rem;
+      background-color: #0011280e;
+
+      .image-wrapper {
+        height: 10rem;
+        width: 10rem;
+
+        @media (max-width: 395px) {
+          height: 8rem;
+          width: 8rem;
+        }
+
+        .author-img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .details {
+        flex: 3;
+
+        h3 {
+          font-size: 3rem;
+          font-weight: 600;
+        }
+
+        h4 {
+          font-size: 2rem;
+          color: var(--color-text-dark-2);
+          margin-top: -1rem;
+        }
+
+        .socials {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          .icon-wrapper {
+            .icon {
+              font-size: 1.8rem;
+              color: #585858;
+              transition: all 0.2s;
+
+              &:hover {
+                transform: translateY(-3px);
+                color: var(--color-text-dark-2);
+              }
+            }
+          }
+        }
+
+        @media (max-width: 700px) {
+          h3 {
+            font-size: 2.4rem;
+          }
+
+          h4 {
+            font-size: 1.8rem;
+          }
+        }
+
+        @media (max-width: 500px) {
+          h3 {
+            font-size: 1.8rem;
+          }
+
+          h4 {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
